@@ -1,0 +1,10 @@
+# dsh-research-writing bundle patch: stacks the two research-writing plugins.
+# Row ids match the standalone plugins' own patch ids; installing both this
+# bundle and a standalone plugin into the same profile would duplicate rows.
+
+- insert:
+    - id: lit-search
+      name: dsh-lit-search
+
+    - id: latex-guard
+      name: dsh-latex-guard
