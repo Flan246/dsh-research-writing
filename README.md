@@ -1,5 +1,10 @@
 # dsh-research-writing
 
+[![npm version](https://img.shields.io/npm/v/dsh-research-writing)](https://www.npmjs.com/package/dsh-research-writing)
+[![npm downloads](https://img.shields.io/npm/dw/dsh-research-writing)](https://www.npmjs.com/package/dsh-research-writing)
+[![GitHub stars](https://img.shields.io/github/stars/Flan246/dsh-research-writing)](https://github.com/Flan246/dsh-research-writing)
+[![license](https://img.shields.io/npm/l/dsh-research-writing)](./LICENSE)
+
 Research writing bundle for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness): literature search + citations + BibTeX cleanup + LaTeX compile checks, in one install.
 
 ## What's inside
