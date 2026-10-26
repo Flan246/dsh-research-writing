@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "system": "CSSCI",
+      "url": "https://cssrac.nju.edu.cn/",
+      "current_version": "2025-2026",
+      "note": "南京大学中国社会科学研究评价中心；若官网不可达，参考高校转载 https://rwskc.zust.edu.cn/（2025-2026 674 本）"
+    },
+    {
+      "system": "北大核心",
+      "url": "https://www.lib.pku.edu.cn/",
+      "current_version": "2023",
+      "note": "《中文核心期刊要目总览》三年一版；关注 2026 年版是否发布"
+    },
+    {
+      "system": "中科院分区表",
+      "url": "https://www.fenqubiao.com/",
+      "current_version": "2025",
+      "note": "年度发布；跟踪《新锐期刊分区表》（2026-03 推出）是否接棒"
+    },
+    {
+      "system": "CCF",
+      "url": "https://www.ccf.org.cn/Academic_Evaluation/By_category/",
+      "current_version": "2022",
+      "note": "CCF 推荐国际学术会议和期刊目录（A/B/C 类）"
+    },
+    {
+      "system": "国际期刊预警名单",
+      "url": "https://earlywarning.fenqubiao.com/",
+      "current_version": "2025",
+      "note": "中科院国际期刊预警名单；被预警期刊不进白名单"
+    }
+  ]
+}
