@@ -14,6 +14,10 @@ Research writing bundle for [DeepSeek Harness](https://github.com/deepseek-ai/de
 | [dsh-lit-search](https://github.com/Flan246/dsh-lit-search) | `lit_search` / `lit_cite` / `lit_bib` / `lit_related` — Crossref + OpenAlex literature search, GB/T 7714 / APA / BibTeX citations (incl. arXiv preprints) |
 | [dsh-latex-guard](https://github.com/Flan246/dsh-latex-guard) | `latex_check` / `bib_lint` / `bib_fill` / `cite_audit` — latexmk compile checks with engine auto-detection, BibTeX lint/fill, citation audit |
 
+### Citation guide (new in 0.2.0)
+
+The bundle now ships `skill/citation-guide.md`: a Chinese-language citation decision guide for undergraduate/novice paper writers — how many references to cite, which papers to prioritize (classics / top venues / recent work), a three-round search strategy, GB/T 7714 ordering rules, footnote vs. endnote vs. bibliography, and a field-tested pitfall list. The bundle's SKILL.md points agents to it for literature-review and reference-selection tasks.
+
 ## Install
 
 ```bash

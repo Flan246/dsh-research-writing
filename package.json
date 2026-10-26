@@ -1,6 +1,6 @@
 {
   "name": "dsh-research-writing",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Research writing bundle for DeepSeek Harness: literature search/citation (dsh-lit-search) + LaTeX/BibTeX guard (dsh-latex-guard) in one install.",
   "type": "module",
   "license": "MIT",
@@ -13,7 +13,7 @@
   "engines": { "node": ">=20" },
   "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
   "dependencies": {
-    "dsh-lit-search": "^0.1.3",
+    "dsh-lit-search": "^0.2.2",
     "dsh-latex-guard": "^0.1.3"
   }
 }
