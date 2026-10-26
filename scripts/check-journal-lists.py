@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """季度期刊名单核验：只查官方名单是否换版，不爬名单。
 
-退出码：0=全部 unchanged；1=存在 maybe_updated（提醒主人）；2=全部 unknown。
+退出码：0=全部 unchanged；1=存在 maybe_updated（提醒主人）；2=其余组合（含全部 unknown）。
 用法：python scripts/check-journal-lists.py [path-to-journal-sources.json]
 """
 import json
@@ -44,9 +44,9 @@ def main() -> int:
     statuses = {r["status"] for r in results}
     if "maybe_updated" in statuses:
         return 1
-    if statuses == {"unknown"}:
-        return 2
-    return 0
+    if statuses == {"unchanged"}:
+        return 0
+    return 2
 
 
 if __name__ == "__main__":
