@@ -50,6 +50,22 @@ class CheckSourceTest(unittest.TestCase):
         r = check_source(src, fetcher=lambda url: "历史：2023-2024；现行：2025-2026")
         self.assertEqual(r["status"], "unchanged")
 
+    def test_newer_version_alongside_current_is_maybe_updated(self):
+        src = make_source(current_version="2022")
+        r = check_source(src, fetcher=lambda url: "历史目录：2022；最新目录：2025")
+        self.assertEqual(r["status"], "maybe_updated")
+        self.assertIn("2025", r["detail"])
+
+    def test_older_version_alongside_current_is_unchanged(self):
+        src = make_source(current_version="2022")
+        r = check_source(src, fetcher=lambda url: "历史目录：2021；最新目录：2022")
+        self.assertEqual(r["status"], "unchanged")
+
+    def test_current_interval_does_not_trigger_self_comparison(self):
+        src = make_source(current_version="2025-2026")
+        r = check_source(src, fetcher=lambda url: "现行目录：2025-2026")
+        self.assertEqual(r["status"], "unchanged")
+
 
 class MainExitCodeTest(unittest.TestCase):
     def run_main(self, statuses):
