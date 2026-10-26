@@ -19,4 +19,6 @@ This bundle combines two plugins into one install. Typical end-to-end loop:
 
 当任务涉及**文献综述写作、选择/筛选参考文献、确定引用数量与优先级、整理引用格式与排序、判断期刊是否高质量**时，先阅读本包内的 `skill/citation-guide.md`（论文引用指南），按其中的数量基准、三类文献配方、三轮检索法与雷区清单执行，再调用上述工具落地。指南还覆盖 GB/T 7714 顺序编码制与著者-出版年制的排序规则、脚注/尾注/文后参考文献表的区别。
 
+判断期刊/会议是否"高质量"时，查本包 `data/journal-whitelist.json`（经管+计算机学科子集，每条目含 CSSCI/北大核心/CCF/中科院分区等官方出处与名单版本）；名单内按标注级别采信，名单外不要凭印象断言级别，可建议用户补充核验。该名单按季度核验官方版本，可能滞后于最新换版。
+
 CLI fallback：`npx dsh-lit-search <search|cite|bib|related>` 与 `npx dsh-latex-guard <check|bib-lint|bib-fill|cite-audit>`，均支持 `--json`。

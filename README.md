@@ -18,6 +18,10 @@ Research writing bundle for [DeepSeek Harness](https://github.com/deepseek-ai/de
 
 The bundle now ships `skill/citation-guide.md`: a Chinese-language citation decision guide for undergraduate/novice paper writers — how many references to cite, which papers to prioritize (classics / top venues / recent work), a three-round search strategy, GB/T 7714 ordering rules, footnote vs. endnote vs. bibliography, and a field-tested pitfall list. The bundle's SKILL.md points agents to it for literature-review and reference-selection tasks.
 
+### Journal whitelist (new in 0.3.0)
+
+`data/journal-whitelist.json`: curated economics/management + computer science venue whitelist with official sources and list versions (CSSCI 2025-2026, PKU Core 2023, CCF 2022, CAS journal divisions). Agents should check this file instead of guessing venue quality. `scripts/check-journal-lists.py` re-checks official list versions quarterly (local use only).
+
 ## Install
 
 ```bash
